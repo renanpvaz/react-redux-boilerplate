@@ -68,6 +68,17 @@ const Sandbox = ({ children }) => (
         </Panel>
       </Panel>
     </section>
+    <h1>{'<Panel row />'}</h1>
+    <section className="sandbox__sample">
+      <Panel row>
+        <Panel className="sandbox__sample-box" flex="2" inset="m">
+          <samp>{'<Panel flex="2" inset="s" />'}</samp>
+        </Panel>
+        <Panel className="sandbox__sample-box" flex="1" inset="m">
+          <samp>{'<Panel flex="1" inset="s" />'}</samp>
+        </Panel>
+      </Panel>
+    </section>
     <h1>{'<Panel wrap />'}</h1>
     <section className="sandbox__sample">
       <Panel row wrap>

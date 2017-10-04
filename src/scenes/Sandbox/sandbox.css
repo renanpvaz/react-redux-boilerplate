@@ -6,7 +6,7 @@
 
 .sandbox__reference {
   list-style: none;
-  font-size: 16px;
+  font-size: 14px;
   position: fixed;
   transform: translateX(-200px);
 }
@@ -48,10 +48,6 @@
 .sandbox__sample-box {
   background-color: #e3fbe9;
   border: 1px solid #cae4cf;
-}
-
-.margin {
-  background-color: red;
 }
 
 .sandbox samp {
