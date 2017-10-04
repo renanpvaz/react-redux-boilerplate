@@ -1,0 +1,143 @@
+.panel-flex {
+  display: flex;
+}
+
+.panel-fit {
+  width: 100%;
+}
+
+.panel-inset {
+  box-sizing: border-box;
+}
+
+.panel-inset-xxs {
+  padding: 0.125rem;
+}
+.panel-inset-xs {
+  padding: 0.25rem;
+}
+.panel-inset-s {
+  padding: 0.5rem;
+}
+.panel-inset-m {
+  padding: 1rem;
+}
+.panel-inset-l {
+  padding: 2rem;
+}
+.panel-inset-xl {
+  padding: 4rem;
+}
+.panel-inset-xxl {
+  padding: 8rem;
+}
+
+.panel-x-xxs {
+  padding: 0 0.125rem;
+}
+.panel-x-xs {
+  padding: 0 0.25rem;
+}
+.panel-x-s {
+  padding: 0 0.5rem;
+}
+.panel-x-m {
+  padding: 0 1rem;
+}
+.panel-x-l {
+  padding: 0 2rem;
+}
+.panel-x-xl {
+  padding: 0 4rem;
+}
+.panel-x-xxl {
+  padding: 0 8rem;
+}
+
+.panel-y-xxs {
+  padding: 0.125rem 0;
+}
+.panel-y-xs {
+  padding: 0.25rem 0;
+}
+.panel-y-s {
+  padding: 0.5rem 0;
+}
+.panel-y-m {
+  padding: 1rem 0;
+}
+.panel-y-l {
+  padding: 2rem 0;
+}
+.panel-y-xl {
+  padding: 4rem 0;
+}
+.panel-y-xxl {
+  padding: 8rem 0;
+}
+
+.panel-below-xxs {
+  margin: 0 0 0.125rem 0;
+}
+.panel-below-xs {
+  margin: 0 0 0.25rem 0;
+}
+.panel-below-s {
+  margin: 0 0 0.5rem 0;
+}
+.panel-below-m {
+  margin: 0 0 1rem 0;
+}
+.panel-below-l {
+  margin: 0 0 2rem 0;
+}
+.panel-below-xl {
+  margin: 0 0 4rem 0;
+}
+.panel-below-xxl {
+  margin: 0 0 8rem 0;
+}
+
+.panel-between-xxs > :not(:last-child) {
+  margin: 0 0 0.125rem 0;
+}
+.panel-between-xs > :not(:last-child) {
+  margin: 0 0 0.25rem 0;
+}
+.panel-between-s > :not(:last-child) {
+  margin: 0 0 0.5rem 0;
+}
+.panel-between-m > :not(:last-child) {
+  margin: 0 0 1rem 0;
+}
+.panel-between-l > :not(:last-child) {
+  margin: 0 0 2rem 0;
+}
+.panel-between-xl > :not(:last-child) {
+  margin: 0 0 4rem 0;
+}
+.panel-between-xxl > :not(:last-child) {
+  margin: 0 0 8rem 0;
+}
+
+.panel-between-inline-xxs > :not(:last-child) {
+  margin: 0 0.125rem 0 0;
+}
+.panel-between-inline-xs > :not(:last-child) {
+  margin: 0 0.25rem 0 0;
+}
+.panel-between-inline-s > :not(:last-child) {
+  margin: 0 0.5rem 0 0;
+}
+.panel-between-inline-m > :not(:last-child) {
+  margin: 0 1rem 0 0;
+}
+.panel-between-inline-l > :not(:last-child) {
+  margin: 0 2rem 0 0;
+}
+.panel-between-inline-xl > :not(:last-child) {
+  margin: 0 4rem 0 0;
+}
+.panel-between-inline-xxl > :not(:last-child) {
+  margin: 0 8rem 0 0;
+}
