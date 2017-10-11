@@ -1,11 +1,35 @@
 import React from 'react'
 
 import Panel from '../../components/Panel'
+import Button from '../../components/Button'
 
 import './sandbox.css'
 
 const Sandbox = ({ children }) => (
   <main className="sandbox">
+    <h1>{'<Button />'}</h1>
+    <section className="sandbox__sample">
+      <Panel between="m" inline wrap align="flex-start">
+        <Button>
+          button
+        </Button>
+        <Button to="/sandbox">
+          internal link
+        </Button>
+        <Button href="/sandbox">
+          external link
+        </Button>
+        <Button ghost>
+          ghost
+        </Button>
+        <Button small>
+          small
+        </Button>
+        <Button disabled>
+          disabled
+        </Button>
+      </Panel>
+    </section>
     <h1>{'<Panel column />'}</h1>
     <section className="sandbox__sample">
       <Panel column>
