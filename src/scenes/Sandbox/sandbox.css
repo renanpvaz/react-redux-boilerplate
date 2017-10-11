@@ -4,35 +4,6 @@
   font-family: monospace;
 }
 
-.sandbox__reference {
-  list-style: none;
-  font-size: 14px;
-  position: fixed;
-  transform: translateX(-200px);
-}
-
-.sandbox__reference li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 8px;
-}
-
-.sandbox__reference li:before {
-  width: 16px;
-  height: 16px;
-  margin-right: 16px;
-  content: ' ';
-  display: inline-block;
-}
-
-.sandbox__reference :first-child:before {
-  background-color: #ffb59e;
-}
-
-.sandbox__reference :last-child:before {
-  background-color: #e3fbe9;
-}
-
 .sandbox__sample {
   padding: 16px;
   border: 1px #e8e8e8 solid;

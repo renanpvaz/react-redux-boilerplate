@@ -6,10 +6,6 @@ import './sandbox.css'
 
 const Sandbox = ({ children }) => (
   <main className="sandbox">
-    <nav className="sandbox__reference">
-      <li>margin</li>
-      <li>padding</li>
-    </nav>
     <h1>{'<Panel column />'}</h1>
     <section className="sandbox__sample">
       <Panel column>
