@@ -1,5 +1,5 @@
 import React from 'react'
-import classNames from 'classnames'
+import cn from 'utils/cn'
 
 import './panel.css'
 
@@ -16,6 +16,7 @@ const Panel = ({
   inline,
   row,
   column,
+  direction,
   flex,
   align,
   justify,
@@ -32,28 +33,22 @@ const Panel = ({
       alignItems: align || (centered && 'center'),
       justifyContent: justify || (centered && 'center'),
       flexWrap: wrap && 'wrap',
-      flexDirection: column ? 'column' : (row || wrap)
-                            ? 'row' : '',
+      flexDirection: column ? 'column'
+        : (row || wrap) ?  'row'
+        : direction,
     }}
     className={
-      classNames(
+      cn(
         'panel',
         className,
-
         inset && 'panel-inset',
         fit && 'panel-fit',
-
-        // padding
         inset && `panel-inset-${inset}`,
         x && `panel-x-${x}`,
         y && `panel-y-${y}`,
-
-        // margin
         below && `panel-below-${below}`,
         between && `panel-between-${between}`,
         between && (inline || row) && `panel-between-inline-${between}`,
-
-        // alignment
         (row || column || wrap) && 'panel-flex',
       )
     }
