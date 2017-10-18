@@ -18,13 +18,12 @@
     "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
-    "react-dev-utils": "^4.1.0",
-    "whatwg-fetch": "2.0.3",
     "autoprefixer": "7.1.2",
     "babel-core": "6.25.0",
     "babel-eslint": "7.2.3",
     "babel-jest": "20.0.3",
     "babel-loader": "7.1.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-react-app": "^3.0.3",
     "babel-runtime": "6.26.0",
     "case-sensitive-paths-webpack-plugin": "2.1.1",
@@ -47,13 +46,15 @@
     "jest": "20.0.4",
     "postcss-flexbugs-fixes": "3.2.0",
     "postcss-loader": "2.0.6",
+    "react-dev-utils": "^4.1.0",
     "react-test-renderer": "^16.0.0",
     "style-loader": "0.18.2",
     "sw-precache-webpack-plugin": "0.11.4",
     "url-loader": "0.5.9",
     "webpack": "3.5.1",
     "webpack-dev-server": "2.8.2",
-    "webpack-manifest-plugin": "1.2.1"
+    "webpack-manifest-plugin": "1.2.1",
+    "whatwg-fetch": "2.0.3"
   },
   "scripts": {
     "start": "node scripts/start.js",
@@ -98,7 +99,10 @@
   "babel": {
     "presets": [
       "react-app"
-    ]
+    ],
+     "plugins": [
+       "transform-class-properties"
+     ]
   },
   "eslintConfig": {
     "extends": "react-app"
