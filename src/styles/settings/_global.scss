@@ -1,0 +1,28 @@
+$global-radius: 3px !default;
+$global-transition: all 300ms ease-in-out !default;
+
+$font-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI',
+  'Roboto', 'Helvetica Neue', 'Arial', sans-serif !default;
+
+$bp-small: 480px;
+$bp-medium: 768px;
+$bp-large: 1024px;
+$bp-xlarge: 1280px;
+$bp-full: 1600px;
+
+$color-white: #fff;
+$color-black: #000;
+$color-very-light-grey: #ccc;
+$color-light-grey: #999;
+$color-medium-grey: #666;
+$color-dark-grey: #333;
+
+$color-bg: $color-white;
+$color-text: $color-black;
+
+$color-link: $color-medium-grey;
+$color-hover: $color-light-grey;
+
+$color-border: $color-very-light-grey;
+
+$color-fill: $color-very-light-grey;
