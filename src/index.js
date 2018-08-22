@@ -26,15 +26,14 @@ const store = createStore(
   ),
 )
 
+
 ReactDOM.render(
   <Provider store={store}>
     <ConnectedRouter history={history}>
-      <div>
-        <Switch>
-          <Route exact path="/" render={() => (<div>Match</div>)} />
-          <Route render={() => (<div>Miss</div>)} />
-        </Switch>
-      </div>
+      <Switch>
+        <Route exact path="/" render={() => 'Hello'} />
+        <Route render={() => (<div>Miss</div>)} />
+      </Switch>
     </ConnectedRouter>
   </Provider>,
   document.getElementById('root')
