@@ -13,10 +13,10 @@ import { connectRouter, routerMiddleware, ConnectedRouter } from 'connected-reac
 import { Provider } from 'react-redux'
 import { Route, Switch } from 'react-router'
 
-import rootReducer from './store'
+import rootReducer from 'store'
 
 import App from './App'
-import Button from './components/Button'
+import Button from 'components/Button'
 
 const history = createBrowserHistory()
 const enhancedCompose = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
@@ -26,7 +26,6 @@ const store = createStore(
   enhancedCompose(
     applyMiddleware(
       routerMiddleware(history),
-      // more middlewares here
     ),
   ),
 )
