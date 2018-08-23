@@ -1,0 +1,14 @@
+.example {
+}
+
+.example {
+  margin-bottom: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.example > *:not(:last-child) {
+  margin-right: 8px;
+}

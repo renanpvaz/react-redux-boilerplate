@@ -1,0 +1,30 @@
+.input {
+  font-weight: 100;
+  border: 1px solid #bfc0c0;
+  border-radius: 4px;
+  color: inherit;
+  padding: 0 8px;
+  line-height: 30px;
+  outline: 0;
+  transition: all 75ms ease-in-out;
+}
+
+.input:focus {
+  box-shadow: 0 0 0 1px #0576b9, 0 0 0 5px rgba(45,158,224,.3);
+}
+
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon .input {
+  padding-left: 34px;
+}
+
+.input-with-icon__icon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 4px 12px;
+}
