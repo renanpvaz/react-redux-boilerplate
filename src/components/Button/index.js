@@ -3,12 +3,19 @@ import cn from 'classnames'
 
 import './button.css'
 
-const Button = ({ children, ghost }) => (
+const Button = ({
+  children,
+  ghost,
+  disabled,
+  onClick,
+}) => (
   <button
     className={cn(
       'button',
       ghost && 'button--ghost',
     )}
+    onClick={onClick}
+    disabled={disabled}
   >
     {children}
   </button>
