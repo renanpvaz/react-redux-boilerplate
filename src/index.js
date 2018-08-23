@@ -1,4 +1,6 @@
-import './index.css'
+import 'normalize.css/normalize.css'
+import './main.css'
+
 import registerServiceWorker from './registerServiceWorker'
 
 import React from 'react'
@@ -14,6 +16,7 @@ import { Route, Switch } from 'react-router'
 import rootReducer from './store'
 
 import App from './App'
+import Button from './components/Button'
 
 const history = createBrowserHistory()
 const enhancedCompose = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
@@ -28,14 +31,12 @@ const store = createStore(
   ),
 )
 
-
-
 ReactDOM.render(
   <Provider store={store}>
     <ConnectedRouter history={history}>
       <App>
         <Switch>
-          <Route exact path="/" render={() => 'Hello'} />
+          <Route exact path="/" render={() => <Button>Hello</Button>} />
           <Route render={() => (<div>Miss</div>)} />
         </Switch>
       </App>
