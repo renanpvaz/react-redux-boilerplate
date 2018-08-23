@@ -4,6 +4,7 @@ import Button from 'components/Button'
 import Icon from 'components/Icon'
 import Input from 'components/Input'
 import Card from 'components/Card'
+import RadioGroup from 'components/RadioGroup'
 
 import './examples.css'
 
@@ -50,6 +51,16 @@ const Examples = () => (
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </Card>
+    </Example>
+    <Example>
+      <RadioGroup
+        name="radio"
+        options={[
+          { value: 'option1', label: 'Option 1' },
+          { value: 'option2', label: 'Option 2' },
+          { value: 'option3', label: 'Option 3' },
+        ]}
+      />
     </Example>
   </div>
 )
