@@ -20,13 +20,17 @@
   width: 22px;
   height: 22px;
   background: white;
-  border: 2px solid #1eb6ff;
+  border: 2px solid #bfc0c0;
   border-radius: 50%;
   padding: 2px;
   background-clip: border-box;
   display: flex;
   align-items: center;
   margin-right: 8px;
+}
+
+.radio__bullet:focus {
+  box-shadow: 0 0 0 3px rgba(45,158,224,.3);
 }
 
 .radio__bullet:after {
@@ -36,6 +40,10 @@
   height: 100%;
   border-radius: inherit;
   transition: all .1s ease-in-out;
+}
+
+.radio__bullet:checked {
+  border-color: #1eb6ff;
 }
 
 .radio__bullet:checked:after {
