@@ -1,4 +1,11 @@
 body {
+  margin: 0;
+  color: #3c4858;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI',
-  'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+              'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+body,
+html {
+  height: 100%;
 }

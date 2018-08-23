@@ -35,7 +35,7 @@ ReactDOM.render(
     <ConnectedRouter history={history}>
       <App>
         <Switch>
-          <Route exact path="/" render={() => <Button>Hello</Button>} />
+          <Route exact path="/" render={() => <div style={{margin: 16}}><Button>Hello</Button><br/> <br/><Button ghost>Hello</Button></div>} />
           <Route render={() => (<div>Miss</div>)} />
         </Switch>
       </App>
