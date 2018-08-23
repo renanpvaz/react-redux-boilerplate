@@ -11,7 +11,7 @@
 }
 
 .input:focus {
-  box-shadow: 0 0 0 1px #0576b9, 0 0 0 5px rgba(45,158,224,.3);
+  box-shadow: 0 0 0 1px #0576b9, 0 0 0 4px rgba(45,158,224,.3);
 }
 
 .input-with-icon {
