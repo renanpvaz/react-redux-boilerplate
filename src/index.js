@@ -16,7 +16,7 @@ import { Route, Switch } from 'react-router'
 import rootReducer from 'store'
 
 import App from './App'
-import Button from 'components/Button'
+import Examples from 'scenes/Examples'
 
 const history = createBrowserHistory()
 const enhancedCompose = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
@@ -35,7 +35,7 @@ ReactDOM.render(
     <ConnectedRouter history={history}>
       <App>
         <Switch>
-          <Route exact path="/" render={() => <div style={{margin: 16}}><Button>Hello</Button><br/> <br/><Button ghost>Hello</Button></div>} />
+          <Route exact path="/" component={Examples} />
           <Route render={() => (<div>Miss</div>)} />
         </Switch>
       </App>
