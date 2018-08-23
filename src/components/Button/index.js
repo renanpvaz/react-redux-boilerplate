@@ -15,6 +15,7 @@ const Button = ({
     className={cn(
       'button',
       ghost && 'button--ghost',
+      !children && 'button--empty',
       icon && 'button--with-icon',
     )}
     onClick={onClick}

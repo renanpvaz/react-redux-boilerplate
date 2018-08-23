@@ -23,6 +23,8 @@ const Examples = () => (
       &nbsp;&nbsp;
       <Button icon="alert-triangle">With icon</Button>
       &nbsp;&nbsp;
+      <Button icon="plus" />
+      &nbsp;&nbsp;
     </Example>
     <Example>
       <Input
