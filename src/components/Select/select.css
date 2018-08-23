@@ -1,0 +1,7 @@
+.input--select {
+  height: 30px;
+  box-sizing: border-box;
+  min-width: 240px;
+  background: white;
+  cursor: pointer;
+}

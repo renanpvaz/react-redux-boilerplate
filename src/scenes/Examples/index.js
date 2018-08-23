@@ -5,6 +5,7 @@ import Icon from 'components/Icon'
 import Input from 'components/Input'
 import Card from 'components/Card'
 import RadioGroup from 'components/RadioGroup'
+import Select from 'components/Select'
 
 import './examples.css'
 
@@ -43,14 +44,6 @@ const Examples = () => (
         as="textarea"
         placeholder="Textarea"
       />
-
-    </Example>
-    <Example>
-      <Card>
-        <p>Card with some text.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </Card>
     </Example>
     <Example>
       <RadioGroup
@@ -61,6 +54,20 @@ const Examples = () => (
           { value: 'option3', label: 'Option 3' },
         ]}
       />
+    </Example>
+    <Example>
+      <Select>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option2">Option 3</option>
+      </Select>
+    </Example>
+    <Example>
+      <Card>
+        <p>Card with some text.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </Card>
     </Example>
   </div>
 )
