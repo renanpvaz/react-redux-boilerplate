@@ -26,7 +26,8 @@ class Examples extends React.Component {
 
   render() {
     return (
-      <div className="examples">
+      <Card className="examples">
+        <h1>Component Examples</h1>
         <Example title="Buttons">
           <Button>Basic</Button>
           &nbsp;&nbsp;
@@ -91,7 +92,7 @@ class Examples extends React.Component {
            </p>
          </Modal>
         </Example>
-      </div>
+      </Card>
     )
   }
 }
