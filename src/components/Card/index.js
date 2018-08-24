@@ -5,12 +5,12 @@ import './card.css'
 
 const Card = ({
   children,
-  as: Element = 'div',
+  as: T = 'div',
   className,
 }) => (
-  <Element className={cn('card', className)}>
+  <T className={cn('card', className)}>
     {children}
-  </Element>
+  </T>
 )
 
 export default Card

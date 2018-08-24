@@ -5,13 +5,13 @@ import Icon from '../Icon'
 import './input.css'
 
 const Input = ({
-  as: Element = 'input',
+  as: T = 'input',
   onChange,
   value,
   placeholder,
   type,
 }) => (
-  <Element
+  <T
     className="input"
     onChange={onChange}
     value={value}

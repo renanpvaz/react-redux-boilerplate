@@ -2,6 +2,7 @@ import React from 'react'
 
 import Button from 'components/Button'
 import Input from 'components/Input'
+import Field from 'components/Field'
 import Card from 'components/Card'
 import RadioGroup from 'components/RadioGroup'
 import Select from 'components/Select'
@@ -55,6 +56,17 @@ class Examples extends React.Component {
           <Input
             as="textarea"
             placeholder="Textarea"
+          />
+        </Example>
+        <Example title="Fields">
+          <Field
+            id="field1"
+            label="A neat little label"
+          />
+          <Field
+            id="field2"
+            label="Another neat little label"
+            info="And some more information"
           />
         </Example>
         <Example title="Radio Group">
