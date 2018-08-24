@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Button from 'components/Button'
-import Icon from 'components/Icon'
 import Input from 'components/Input'
 import Card from 'components/Card'
 import RadioGroup from 'components/RadioGroup'
@@ -45,12 +44,10 @@ class Examples extends React.Component {
             placeholder="Placeholder"
           />
           <Input
-            placeholder="Placeholder"
             icon="book-open"
             placeholder="With icon"
           />
           <Input
-            placeholder="Placeholder"
             type="search"
             placeholder="[type=search]"
           />

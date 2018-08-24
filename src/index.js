@@ -18,6 +18,7 @@ import rootReducer from 'store'
 
 import App from './App'
 import Examples from 'scenes/Examples'
+import ProtectedRoute from 'containers/ProtectedRoute'
 
 const history = createBrowserHistory()
 const enhancedCompose = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
@@ -38,7 +39,8 @@ ReactDOM.render(
       <App>
         <Switch>
           <Route exact path="/" component={Examples} />
-          <Route render={() => (<div>Miss</div>)} />
+          <ProtectedRoute path="/protected" component={() => 'Protected content'} />
+          <Route render={() => 404} />
         </Switch>
       </App>
     </ConnectedRouter>
