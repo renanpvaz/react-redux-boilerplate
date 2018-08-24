@@ -1,14 +1,26 @@
-.example {
+.examples {
+  max-width: 600px;
+  margin: 32px auto;
+  padding: 0 16px;
 }
 
 .example {
-  margin-bottom: 32px;
+  margin-bottom: 64px;
+}
+
+.example__title {
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(67,90,111,.146);
+}
+
+.example__content {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
 }
 
-.example > *:not(:last-child) {
+.example__content > *:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 8px;
 }

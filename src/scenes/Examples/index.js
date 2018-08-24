@@ -9,12 +9,19 @@ import Select from 'components/Select'
 
 import './examples.css'
 
-const Example = ({ children }) =>
-  <div className="example">{children}</div>
+const Example = ({ title, children }) => (
+  <div className="example">
+    <h2 className="example__title">{title}</h2>
+    <div className="example__content">
+      {children}
+    </div>
+  </div>
+)
+
 
 const Examples = () => (
-  <div style={{ maxWidth: 900, margin: '32px auto'}}>
-    <Example>
+  <div className="examples">
+    <Example title="Buttons">
       <Button>Basic</Button>
       &nbsp;&nbsp;
       <Button ghost>Ghost</Button>
@@ -26,7 +33,7 @@ const Examples = () => (
       <Button icon="plus" />
       &nbsp;&nbsp;
     </Example>
-    <Example>
+    <Example title="Text Inputs">
       <Input
         placeholder="Placeholder"
       />
@@ -40,14 +47,12 @@ const Examples = () => (
         type="search"
         placeholder="[type=search]"
       />
-    </Example>
-    <Example>
       <Input
         as="textarea"
         placeholder="Textarea"
       />
     </Example>
-    <Example>
+    <Example title="Radio Group">
       <RadioGroup
         name="radio"
         options={[
@@ -57,14 +62,14 @@ const Examples = () => (
         ]}
       />
     </Example>
-    <Example>
+    <Example title="Select">
       <Select>
         <option value="option1">Option 1</option>
         <option value="option2">Option 2</option>
         <option value="option2">Option 3</option>
       </Select>
     </Example>
-    <Example>
+    <Example title="Card">
       <Card>
         <p>Card with some text.
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
