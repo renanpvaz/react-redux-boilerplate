@@ -1,5 +1,15 @@
 import React from 'react'
 
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+
+import { growl } from 'store/ui/actions'
+import {
+  GROWL_INFO,
+  GROWL_ERROR,
+  GROWL_SUCCESS,
+} from 'store/ui/constants'
+
 import Button from 'components/Button'
 import Input from 'components/Input'
 import Field from 'components/Field'
@@ -104,9 +114,24 @@ class Examples extends React.Component {
            </p>
          </Modal>
         </Example>
+        <Example title="Growl">
+          <Button onClick={() => this.props.growl('Something happened!')}>
+            Show growl
+          </Button>
+          <Button onClick={() => this.props.growl('Something successfully happened!', GROWL_SUCCESS)}>
+            Show success growl
+          </Button>
+          <Button onClick={() => this.props.growl('Something wrong happened!', GROWL_ERROR)}>
+            Show error growl
+          </Button>
+        </Example>
       </Card>
     )
   }
 }
 
-export default Examples
+export default connect(null,
+  dispatch => bindActionCreators({
+    growl,
+  }, dispatch)
+)(Examples)

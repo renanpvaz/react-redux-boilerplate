@@ -1,0 +1,55 @@
+@keyframes showalert {
+  from {
+    opacity: 0;
+    transform: translate(50%, -100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(50%, 0);
+  }
+}
+
+.growl {
+  transition: transform .2s, opacity ease-out .2s;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  width: 250px;
+  max-width: 70vw;
+  text-align: center;
+  margin: 8px 0;
+  box-shadow: rgba(84, 70, 35, 0.2) 0px 6px 10px;
+  right: 50%;
+  position: absolute;
+  transform: translate(50%, 0);
+  background: white;
+  border: 1px solid #eee;
+}
+
+.growl--success {
+  background: rgba(220, 253, 220, 0.95);
+  border-color: #a3eda3;
+}
+
+.growl--error {
+  background: rgba(253, 220, 220, 1);
+  border-color: #eda3a3;
+}
+
+.growl:not(.growl--hidden) {
+  animation: showalert .5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.growl--hidden {
+  transform: translate(50%, -100%);
+  opacity: 0;
+}
+
+.growl-list {
+  position: fixed;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%);
+  list-style: none;
+  z-index: 1;
+}

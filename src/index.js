@@ -8,7 +8,8 @@ import ReactDOM from 'react-dom'
 
 import { createBrowserHistory } from 'history'
 import { applyMiddleware, compose, createStore } from 'redux'
-import createSagaMiddleware from 'redux-saga'
+import logger from 'redux-logger'
+import thunk from 'redux-thunk'
 import { connectRouter, routerMiddleware, ConnectedRouter } from 'connected-react-router'
 
 import { Provider } from 'react-redux'
@@ -27,8 +28,9 @@ const store = createStore(
   connectRouter(history)(rootReducer),
   enhancedCompose(
     applyMiddleware(
+      logger,
+      thunk,
       routerMiddleware(history),
-      createSagaMiddleware(),
     ),
   ),
 )
