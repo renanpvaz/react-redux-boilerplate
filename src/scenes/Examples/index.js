@@ -19,7 +19,7 @@ import Select from 'components/Select'
 import Modal from 'components/Modal'
 import Container from 'components/Container'
 
-import './examples.css'
+import './examples.scss'
 
 const Example = ({ title, children }) => (
   <div className="example">

@@ -1,7 +1,7 @@
 import React from 'react'
 import feather from 'feather-icons'
 
-import './icon.css'
+import './icon.scss'
 
 const Icon = ({ name }) => (
   <i

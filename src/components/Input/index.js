@@ -2,7 +2,7 @@ import React from 'react'
 
 import Icon from '../Icon'
 
-import './input.css'
+import './input.scss'
 
 const Input = ({
   as: T = 'input',

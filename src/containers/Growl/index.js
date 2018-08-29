@@ -9,7 +9,7 @@ import {
   GROWL_SUCCESS,
 } from 'store/ui/constants'
 
-import './growl.css'
+import './growl.scss'
 
 const GrowlMessage = ({ message, type, hidden }) => (
   <li className={cn(

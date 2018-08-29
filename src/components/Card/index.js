@@ -1,7 +1,7 @@
 import React from 'react'
 import cn from 'classnames'
 
-import './card.css'
+import './card.scss'
 
 const Card = ({
   children,

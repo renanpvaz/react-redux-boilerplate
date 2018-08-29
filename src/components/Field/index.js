@@ -2,7 +2,7 @@ import React from 'react'
 
 import Input from '../Input'
 
-import './field.css'
+import './field.scss'
 
 const Field = ({
   id,

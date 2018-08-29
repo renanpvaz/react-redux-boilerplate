@@ -2,7 +2,7 @@ import React from 'react'
 import cn from 'classnames'
 
 import Icon from '../Icon'
-import './button.css'
+import './button.scss'
 
 const Button = ({
   children,

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './radio-group.css'
+import './radio-group.scss'
 
 const Radio = ({
   name,

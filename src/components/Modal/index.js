@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import cn from 'classnames'
 
-import './modal.css'
+import './modal.scss'
 
 const toggleOverflowIfNeeded = props =>
   document.body.style.overflow = props.open

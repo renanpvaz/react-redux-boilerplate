@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './select.css'
+import './select.scss'
 
 const Select = ({ value, onChange, children }) => (
   <select className="input input--select">

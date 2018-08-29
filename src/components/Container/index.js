@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './container.css'
+import './container.scss'
 
 const Container = ({ children }) => (
   <div className="container">

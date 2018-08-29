@@ -1,5 +1,4 @@
-import 'normalize.css/normalize.css'
-import './main.css'
+import './main.scss'
 
 import registerServiceWorker from './registerServiceWorker'
 
