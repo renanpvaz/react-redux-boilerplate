@@ -1,0 +1,23 @@
+:root {
+  --border-radius: 8px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: $body-background;
+  font-family: $font-family;
+  font-size: 14px;
+  letter-spacing: -.15px;
+  line-height: 20px;
+  color: $text;
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+html {
+  height: 100%;
+}

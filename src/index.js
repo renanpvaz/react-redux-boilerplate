@@ -1,4 +1,4 @@
-import './main.scss'
+import './stylesheets/main.scss'
 
 import registerServiceWorker from './registerServiceWorker'
 

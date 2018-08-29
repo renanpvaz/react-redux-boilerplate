@@ -181,7 +181,15 @@ module.exports = {
                   ],
                 },
               },
-              "sass-loader" // compiles Sass to CSS, using Node Sass by default
+              {
+                loader: "sass-loader",
+                options: {
+                  data: '@import "src/stylesheets/base/variables";',
+                  includePaths: [
+                    path.resolve(__dirname, "/src/stylesheets/base")
+                  ]
+                }
+              } // compiles Sass to CSS, using Node Sass by default
             ]
           },
           // "file" loader makes sure those assets get served by WebpackDevServer.
