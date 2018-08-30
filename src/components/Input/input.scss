@@ -1,5 +1,6 @@
 .input {
   font-weight: 100;
+  font-size: 1rem;
   border: 1px solid #bfc0c0;
   border-radius: 4px;
   color: inherit;
@@ -8,25 +9,32 @@
   outline: 0;
   transition: all 75ms ease-in-out;
   box-sizing: border-box;
-}
 
-.input:focus {
-  box-shadow: 0 0 0 1px #0576b9, 0 0 0 4px rgba(45,158,224,.3);
-}
+  &--block {
+    display: block;
+    width: 100%;
+  }
 
-.input-with-icon {
-  display: inline-block;
-  position: relative;
-}
+  &:focus {
+    box-shadow: 0 0 0 1px #0576b9, 0 0 0 4px rgba(45,158,224,.3);
+  }
 
-.input-with-icon .input {
-  padding-left: 34px;
-}
+  &-with-icon {
+    display: inline-block;
+    position: relative;
+  }
 
-.input-with-icon__icon {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: 4px 12px;
+  &-with-icon {
+    .input {
+      padding-left: 34px;
+    }
+
+    &__icon {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 4px 12px;
+    }
+  }
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import cn from 'classnames'
 
 import Icon from '../Icon'
 
@@ -10,9 +11,10 @@ const Input = ({
   value,
   placeholder,
   type,
+  block,
 }) => (
   <T
-    className="input"
+    className={cn('input', block && 'input--block')}
     onChange={onChange}
     value={value}
     placeholder={placeholder}

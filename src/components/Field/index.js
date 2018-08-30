@@ -13,7 +13,7 @@ const Field = ({
 }) => (
   <div className="field">
     <label className="field__label" htmlFor={id}>{label}</label>
-    <T id={id} {...rest} />
+    <T id={id} block {...rest} />
     {info && <small className="field__info">{info}</small>}
   </div>
 )

@@ -18,12 +18,14 @@ import RadioGroup from 'components/RadioGroup'
 import Select from 'components/Select'
 import Modal from 'components/Modal'
 import Container from 'components/Container'
+import Text from 'components/Text'
 
 import './examples.scss'
 
 const Example = ({ title, children }) => (
   <div className="example">
-    <h2 className="example__title">{title}</h2>
+    <h2>{title}</h2>
+    <hr />
     <div className="example__content">
       {children}
     </div>
@@ -66,9 +68,15 @@ class Examples extends React.Component {
               placeholder="[type=search]"
             />
             <Input
-              as="textarea"
-              placeholder="Textarea"
+              block
+              placeholder="Block input"
             />
+            <div>
+              <Input
+                as="textarea"
+                placeholder="Textarea"
+              />
+            </div>
           </Example>
           <Example title="Fields">
             <Field
@@ -100,9 +108,9 @@ class Examples extends React.Component {
           </Example>
           <Example title="Card">
             <Card>
-              <p>Card with some text.
+              <Text as="p">Card with some text.
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
+              </Text>
             </Card>
           </Example>
           <Example title="Modal">

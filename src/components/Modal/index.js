@@ -2,6 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import cn from 'classnames'
 
+import Card from '../Card'
+
 import './modal.scss'
 
 const toggleOverflowIfNeeded = props =>
@@ -26,9 +28,9 @@ class Modal extends React.Component {
     return ReactDOM.createPortal(
       <div className={cn('modal', open && 'modal--open')}>
         <div className="modal__backdrop" onClick={onClose} />
-        <div className="modal__content">
+        <Card className="modal__content">
           {children}
-        </div>
+        </Card>
       </div>,
       document.getElementById('modal-root'),
     )
