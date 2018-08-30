@@ -14,7 +14,7 @@ const Input = ({
   block,
 }) => (
   <T
-    className={cn('input', block && 'input--block')}
+    className={cn('input', (block || T === 'textarea') && 'input--block')}
     onChange={onChange}
     value={value}
     placeholder={placeholder}

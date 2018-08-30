@@ -48,6 +48,10 @@ textarea {
   margin: 0;
 }
 
+textarea {
+  resize: none;
+}
+
 html {
   box-sizing: border-box;
 }
