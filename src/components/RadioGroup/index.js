@@ -10,8 +10,14 @@ const Radio = ({
   onChange,
 }) => (
   <div className="radio">
-    <input className="radio__bullet" type="radio" id={value} name={name} onChange={onChange} />
-    <label htmlFor={value}>{label}</label>
+    <input
+      className="radio__bullet"
+      type="radio"
+      id={value}
+      name={name} 
+      onChange={onChange}
+    />
+    <label className="radio__label" htmlFor={value}>{label}</label>
   </div>
 )
 
