@@ -10,13 +10,17 @@ const Button = ({
   disabled,
   onClick,
   icon,
+  block,
+  size = 'md',
 }) => (
   <button
     className={cn(
       'button',
       ghost && 'button--ghost',
+      block && 'button--block',
       !children && 'button--empty',
       icon && 'button--with-icon',
+      size && `button--${size}`
     )}
     onClick={onClick}
     disabled={disabled}

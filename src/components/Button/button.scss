@@ -1,6 +1,5 @@
 .button {
   font-size: 1rem;
-  min-height: 30px;
   background: $primary;
   color: #fff;
   transition: all 75ms ease-in-out;
@@ -23,45 +22,54 @@
   padding: 0 16px;
   outline: 0;
   position: relative;
-}
 
-.button:focus {
-  box-shadow: 0 0 0 1px #0576b9, 0 0 0 4px rgba(45,158,224,.3);
-}
+  &:focus {
+    box-shadow: 0 0 0 1px #0576b9, 0 0 0 4px rgba(45,158,224,.3);
+  }
 
-.button:not([disabled]):not(:focus):hover {
-  box-shadow: inset 0 0 0 1px rgba(44,45,48,.3), 0 1px 4px rgba(44,45,48,.2);
-}
+  &:not([disabled]):not(:focus):hover {
+    box-shadow: inset 0 0 0 1px rgba(44,45,48,.3), 0 1px 4px rgba(44,45,48,.2);
+  }
 
-.button--ghost {
-  background: #fff;
-  color: inherit;
-  box-shadow: inset 0 0 0 1px rgba(44,45,48,.3);
-}
+  &--ghost {
+    background: #fff;
+    color: inherit;
+    box-shadow: inset 0 0 0 1px rgba(44,45,48,.3);
+  }
 
-.button--with-icon:not(.button--empty) {
-  padding-left: 32px;
-}
+  &--with-icon:not(.button--empty) {
+    padding-left: 32px;
+  }
 
-.button[disabled] {
-  opacity: .8;
-  background: #eee;
-  color: inherit;
-  cursor: auto;
-}
+  &[disabled] {
+    opacity: .8;
+    background: #eee;
+    color: inherit;
+    cursor: auto;
+  }
 
-.button__icon {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: 2px 8px;
-}
+  &__icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 2px 8px;
+  }
 
-.button--empty .button__icon {
-  left: unset;
-  right: 50%;
-  top: 50%;
-  transform: translate(50%, -50%);
-  margin: 2px 0;
+  &--empty &__icon {
+    left: unset;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    margin: 2px 0;
+  }
+
+  &--block {
+    width: 100%;
+    display: block;
+  }
+
+  &--l {
+    line-height: 40px;
+  }
 }

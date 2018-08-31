@@ -1,0 +1,22 @@
+.text-center {
+  text-align:  center;
+}
+
+.text-left {
+  text-align:  left;
+}
+
+.text-right {
+  text-align:  center;
+}
+
+.center-horizontally {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-vertically {
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+}
