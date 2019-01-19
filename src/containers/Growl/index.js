@@ -1,6 +1,5 @@
 import React from 'react'
 import cn from 'classnames'
-import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 
 import { getGrowls } from 'store/ui'

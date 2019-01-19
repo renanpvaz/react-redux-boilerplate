@@ -1,4 +1,3 @@
-import { delay } from 'redux-saga'
 import { createAction } from 'redux-actions'
 
 import * as constants from './constants'
