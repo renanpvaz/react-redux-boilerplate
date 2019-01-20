@@ -5,7 +5,6 @@ import { connect } from 'react-redux'
 
 import { growl } from 'store/ui/actions'
 import {
-  GROWL_INFO,
   GROWL_ERROR,
   GROWL_SUCCESS,
 } from 'store/ui/constants'
